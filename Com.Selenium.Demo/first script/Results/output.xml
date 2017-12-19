@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151130 18:43:13.817" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<suite source="C:\development\robot-scripts\archive\first script - overview\tests\amazon.robot" id="s1" name="Amazon">
+<test id="s1-t1" name="User must sign in to check out">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.amazon.com</arg>
+<arg>ie</arg>
+</arguments>
+<msg timestamp="20151130 18:43:13.968" level="INFO">Opening browser 'ie' to base url 'http://www.amazon.com'</msg>
+<status status="PASS" endtime="20151130 18:43:18.357" starttime="20151130 18:43:13.968"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Your Amazon.com</arg>
+</arguments>
+<status status="PASS" endtime="20151130 18:43:18.752" starttime="20151130 18:43:18.357"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+</arguments>
+<msg timestamp="20151130 18:43:18.753" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'</msg>
+<status status="PASS" endtime="20151130 18:43:19.213" starttime="20151130 18:43:18.753"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+</arguments>
+<msg timestamp="20151130 18:43:19.214" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20151130 18:43:23.217" starttime="20151130 18:43:19.214"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>results for "Ferrari 458"</arg>
+</arguments>
+<status status="PASS" endtime="20151130 18:43:23.323" starttime="20151130 18:43:23.217"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>css=#result_0 a.s-access-detail-page</arg>
+</arguments>
+<msg timestamp="20151130 18:43:23.323" level="INFO">Clicking link 'css=#result_0 a.s-access-detail-page'.</msg>
+<status status="PASS" endtime="20151130 18:43:27.883" starttime="20151130 18:43:23.323"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Back to search results</arg>
+</arguments>
+<status status="PASS" endtime="20151130 18:43:28.015" starttime="20151130 18:43:27.884"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=add-to-cart-button</arg>
+</arguments>
+<msg timestamp="20151130 18:43:28.016" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" endtime="20151130 18:43:30.379" starttime="20151130 18:43:28.016"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Added to Cart</arg>
+</arguments>
+<status status="PASS" endtime="20151130 18:43:30.473" starttime="20151130 18:43:30.380"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>id=hlb-ptc-btn-native</arg>
+</arguments>
+<msg timestamp="20151130 18:43:30.474" level="INFO">Clicking link 'id=hlb-ptc-btn-native'.</msg>
+<status status="PASS" endtime="20151130 18:43:31.769" starttime="20151130 18:43:30.474"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>signInSubmit</arg>
+</arguments>
+<msg timestamp="20151130 18:43:31.824" level="INFO">Current page contains element 'signInSubmit'.</msg>
+<status status="PASS" endtime="20151130 18:43:31.825" starttime="20151130 18:43:31.771"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Text Should Be">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>signInSubmit</arg>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20151130 18:43:31.826" level="INFO">Verifying element 'signInSubmit' contains exactly text 'Sign In'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20151130 18:43:32.017" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20151130 18:43:32.017" starttime="20151130 18:43:31.899"></status>
+</kw>
+<msg timestamp="20151130 18:43:32.018" level="FAIL">The text of element 'signInSubmit' should have been 'Sign In' but in fact it was ''.</msg>
+<status status="FAIL" endtime="20151130 18:43:32.018" starttime="20151130 18:43:31.825"></status>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20151130 18:43:32.019" critical="yes" starttime="20151130 18:43:13.966">The text of element 'signInSubmit' should have been 'Sign In' but in fact it was ''.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20151130 18:43:32.020" starttime="20151130 18:43:13.817"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat info="" links="" doc="" combined="" pass="0" fail="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
